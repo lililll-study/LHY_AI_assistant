@@ -16,3 +16,4 @@ test_env.py
 data/
 requirements.txt
 embed_model_download.py
+configs/settings.py
