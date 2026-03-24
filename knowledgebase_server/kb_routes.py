@@ -137,14 +137,14 @@ async def upload_docs(
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size,   #定义分割器的分割参数，每个快的大小，重叠字符数，分隔符
                                                        chunk_overlap=chunk_overlap,
                                                        separators=[
-            "\n\n",
-            "\n",
-            " ",
-            ".",
-            ",",
-            "，",
-            "。",
-            ""
+        "\n## ",           # 二级标题（最重要，每个景区大块）
+        "\n### ",          # 三级标题（每个具体景点）
+        "\n\n",            # 段落空行
+        "\n",              # 换行
+        "。",              # 句子结束
+        "，",              # 逗号分隔
+        " ",               # 空格
+        ""                 # 最后手段
         ], )
         # 将文档分割为多个块
         chunks = text_splitter.split_documents(docs)    #使用分割器对文档进行分割

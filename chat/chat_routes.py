@@ -84,7 +84,8 @@ async def agent_chat(
     # for i, item in enumerate(history):
     #     print(f"【后端接收】history[{i}]类型: {type(item)}, 值预览: {str(item)[:100]}...")
             
-    mcp_tools = await mcp_manager.get_tools()
+    # mcp_tools = await mcp_manager.get_tools() + tools
+    mcp_tools = tools
     print(f"🔧 MCP 工具列表: {[tool.name for tool in mcp_tools]}")
 
     documents = files_rag(files, session_id)    #对上传的文件进行预处理
@@ -229,13 +230,13 @@ async def agent_chat(
     # 创建StreamingResponse，将异步生成器的输出作为流式响应返回
     # 返回 StreamingResponse，以流的形式发送数据
     return StreamingResponse(agent_chat_iterator(), media_type="application/json")
-# 在文件末尾添加生命周期事件
-@chat_router.on_event("startup")
-async def startup_mcp_client():
-    """应用启动时初始化MCP客户端"""
-    await mcp_manager.ensure_initialized()
+# # 在文件末尾添加生命周期事件
+# @chat_router.on_event("startup")
+# async def startup_mcp_client():
+#     """应用启动时初始化MCP客户端"""
+#     await mcp_manager.ensure_initialized()
 
-@chat_router.on_event("shutdown")
-async def shutdown_mcp_client():
-    """应用关闭时清理MCP客户端"""
-    await mcp_manager.close()
+# @chat_router.on_event("shutdown")
+# async def shutdown_mcp_client():
+#     """应用关闭时清理MCP客户端"""
+#     await mcp_manager.close()

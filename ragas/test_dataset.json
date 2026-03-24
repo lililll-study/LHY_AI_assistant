@@ -1,0 +1,397 @@
+[
+    {
+        "question": "iPhone 14 Pro 的发布时间是什么时候？",
+        "ground_truth": "iPhone 14 Pro 于 2022 年 9 月发布",
+        "intent": "EXACT"
+    },
+    {
+        "question": "Python 3.12 有哪些新特性？",
+        "ground_truth": "Python 3.12 新增了 f-string 增强、类型参数语法改进、错误消息优化等特性",
+        "intent": "EXACT"
+    },
+    {
+        "question": "Qwen2.5-72B 模型的参数量是多少？",
+        "ground_truth": "Qwen2.5-72B 模型有 720 亿参数",
+        "intent": "EXACT"
+    },
+    {
+        "question": "LangChain 0.3 版本的主要更新是什么？",
+        "ground_truth": "LangChain 0.3 版本重构了核心模块，引入了更好的流式支持和工具调用机制",
+        "intent": "EXACT"
+    },
+    {
+        "question": "FAISS 向量数据库的索引类型有哪些？",
+        "ground_truth": "FAISS 支持 IndexFlatL2、IndexIVFFlat、IndexHNSW 等多种索引类型",
+        "intent": "EXACT"
+    },
+    {
+        "question": "什么是机器学习？",
+        "ground_truth": "机器学习是人工智能的一个分支，让计算机通过数据学习规律和模式，而无需显式编程",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "如何提高大模型的推理能力？",
+        "ground_truth": "可以通过思维链提示、强化学习微调、增加推理步骤等方式提高大模型的推理能力",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "RAG 检索增强生成的工作原理是什么？",
+        "ground_truth": "RAG 先通过检索从知识库获取相关文档，再将这些文档作为上下文输入大模型生成答案",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "什么是 LoRA 微调？",
+        "ground_truth": "LoRA 是一种参数高效微调方法，通过引入低秩矩阵来更新模型参数，大幅减少训练资源需求",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "为什么需要上下文压缩？",
+        "ground_truth": "上下文压缩可以节省 token 消耗、提高模型响应速度、避免上下文过长导致的目标漂移问题",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "如何评估 RAG 系统的质量？",
+        "ground_truth": "可以通过上下文相关性、答案忠实性、召回率等指标评估 RAG 系统的检索和生成质量",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "什么是意图识别？",
+        "ground_truth": "意图识别是判断用户查询背后目的的技术，将查询分类为精确匹配、语义搜索等类型",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "混合检索的优势是什么？",
+        "ground_truth": "混合检索结合关键词匹配和语义理解，兼顾精确性和泛化能力，提高检索召回率和准确率",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "孙悟空和唐僧是什么关系？",
+        "ground_truth": "孙悟空是唐僧的徒弟，负责保护唐僧西天取经",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "《西游记》的作者是谁？",
+        "ground_truth": "《西游记》的作者是吴承恩",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "诸葛亮的字是什么？",
+        "ground_truth": "诸葛亮的字是孔明",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "Transformer 模型的核心组件是什么？",
+        "ground_truth": "Transformer 的核心组件是自注意力机制、多头注意力和前馈神经网络",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "Python 的创始人是谁？",
+        "ground_truth": "Python 的创始人是 Guido van Rossum",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "BM25 算法的基本原理是什么？",
+        "ground_truth": "BM25 基于词频和逆文档频率计算文档与查询的相关性得分",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "阿里巴巴的创始人是谁？",
+        "ground_truth": "阿里巴巴的创始人是马云",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "南京有哪些著名景点？",
+        "ground_truth": "南京著名景点有中山陵、夫子庙、玄武湖、明孝陵、总统府等",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "中国的首都是哪里？",
+        "ground_truth": "中国的首都是北京",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "清华大学位于哪个城市？",
+        "ground_truth": "清华大学位于北京市",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "OpenAI 开发的著名大模型有哪些？",
+        "ground_truth": "OpenAI 开发的著名大模型有 GPT-3、GPT-4、GPT-4o、DALL-E 等",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "硅谷位于美国的哪个州？",
+        "ground_truth": "硅谷位于美国加利福尼亚州",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "西湖在哪个城市？",
+        "ground_truth": "西湖位于浙江省杭州市",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "华为的总部在哪里？",
+        "ground_truth": "华为的总部位于广东省深圳市",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "Linux 操作系统的创始人是？",
+        "ground_truth": "Linux 操作系统的创始人是 Linus Torvalds",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "Qwen 模型由哪个公司开发？",
+        "ground_truth": "Qwen 模型由阿里巴巴旗下的通义千问团队开发",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "GitHub 是什么平台？",
+        "ground_truth": "GitHub 是一个基于 Git 的代码托管和协作开发平台",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "iPhone 15 的屏幕尺寸是多少？",
+        "ground_truth": "iPhone 15 的屏幕尺寸为 6.1 英寸",
+        "intent": "EXACT"
+    },
+    {
+        "question": "ChatGPT 4o 的上下文长度是多少？",
+        "ground_truth": "GPT-4o 的上下文长度为 128K tokens",
+        "intent": "EXACT"
+    },
+    {
+        "question": "RTX 4090 显卡的显存大小？",
+        "ground_truth": "RTX 4090 显卡的显存为 24GB GDDR6X",
+        "intent": "EXACT"
+    },
+    {
+        "question": "DeepSeek-V3 的参数量是多少？",
+        "ground_truth": "DeepSeek-V3 的参数量为 6710 亿",
+        "intent": "EXACT"
+    },
+    {
+        "question": "Claude 3.5 Sonnet 的上下文长度？",
+        "ground_truth": "Claude 3.5 Sonnet 的上下文长度为 200K tokens",
+        "intent": "EXACT"
+    },
+    {
+        "question": "如何实现 Agent 的多工具协同？",
+        "ground_truth": "通过 ReAct 架构和工具调用标准化，让 Agent 根据意图选择合适的工具并协同执行",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "大模型微调有哪些方法？",
+        "ground_truth": "大模型微调的方法包括全参微调、LoRA、QLoRA、P-Tuning 等参数高效微调技术",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "什么是思维链提示？",
+        "ground_truth": "思维链提示是通过让模型展示推理步骤来提高复杂问题解决能力的技术",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "如何设计 Prompt 让模型更好地理解意图？",
+        "ground_truth": "通过清晰的指令格式、few-shot 示例、角色设定和约束条件，引导模型正确理解意图",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "大模型幻觉问题如何缓解？",
+        "ground_truth": "通过 RAG 检索增强、提示词约束、事实核查和不确定性标注等方法缓解幻觉",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "猪八戒的兵器是什么？",
+        "ground_truth": "猪八戒的兵器是九齿钉耙",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "《水浒传》中宋江的绰号是什么？",
+        "ground_truth": "宋江的绰号是及时雨",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "牛顿发现的是什么定律？",
+        "ground_truth": "牛顿发现了万有引力定律和三大运动定律",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "地球围绕什么公转？",
+        "ground_truth": "地球围绕太阳公转",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "水的化学式是什么？",
+        "ground_truth": "水的化学式是 H₂O",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "ASCII 编码中 'A' 的十进制值是多少？",
+        "ground_truth": "ASCII 编码中 'A' 的十进制值是 65",
+        "intent": "EXACT"
+    },
+    {
+        "question": "HTTP 404 状态码的含义是什么？",
+        "ground_truth": "HTTP 404 表示请求的资源未找到",
+        "intent": "EXACT"
+    },
+    {
+        "question": "联合国成立于哪一年？",
+        "ground_truth": "联合国成立于 1945 年",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "文艺复兴的发源地是哪里？",
+        "ground_truth": "文艺复兴的发源地是意大利",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "微软公司的总部在哪里？",
+        "ground_truth": "微软公司总部位于美国华盛顿州雷德蒙德",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "特斯拉的 CEO 是谁？",
+        "ground_truth": "特斯拉的 CEO 是埃隆·马斯克",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "亚马逊河在哪一个大洲？",
+        "ground_truth": "亚马逊河位于南美洲",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "珠穆朗玛峰的高度是多少？",
+        "ground_truth": "珠穆朗玛峰的海拔高度约为 8848.86 米",
+        "intent": "EXACT"
+    },
+    {
+        "question": "第一次世界大战的爆发年份？",
+        "ground_truth": "第一次世界大战爆发于 1914 年",
+        "intent": "EXACT"
+    },
+    {
+        "question": "人民币的国际货币代码是什么？",
+        "ground_truth": "人民币的国际货币代码是 CNY",
+        "intent": "EXACT"
+    },
+    {
+        "question": "光速在真空中是多少？",
+        "ground_truth": "光速在真空中约为 299792458 米/秒",
+        "intent": "EXACT"
+    },
+    {
+        "question": "什么是过拟合？",
+        "ground_truth": "过拟合是指模型过度学习训练数据中的噪声，导致泛化能力下降的现象",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "梯度消失问题如何解决？",
+        "ground_truth": "可以使用残差连接、BatchNorm、合适的激活函数（如 ReLU）解决梯度消失问题",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "什么是向量数据库？",
+        "ground_truth": "向量数据库专门用于存储和检索高维向量数据，支持相似度搜索",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "MCP 协议的作用是什么？",
+        "ground_truth": "MCP 是模型上下文协议，标准化了 AI 模型与外部工具、数据源的交互接口",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "QLoRA 相比 LoRA 的优势是什么？",
+        "ground_truth": "QLoRA 在 LoRA 基础上引入 4-bit 量化，大幅降低显存占用，可在消费级显卡上微调大模型",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "沙僧在取经团队中的角色是什么？",
+        "ground_truth": "沙僧是唐僧的三徒弟，负责挑行李和辅助降妖",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "《红楼梦》的作者是谁？",
+        "ground_truth": "《红楼梦》的作者是曹雪芹",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "关公的兵器是什么？",
+        "ground_truth": "关公的兵器是青龙偃月刀",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "美国的国庆日是几月几日？",
+        "ground_truth": "美国的国庆日是 7 月 4 日",
+        "intent": "EXACT"
+    },
+    {
+        "question": "Python 3.10 中新增的 match-case 语句是什么？",
+        "ground_truth": "match-case 是 Python 3.10 引入的结构化模式匹配语句，类似其他语言的 switch-case",
+        "intent": "EXACT"
+    },
+    {
+        "question": "Google 的母公司叫什么？",
+        "ground_truth": "Google 的母公司是 Alphabet",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "特斯拉 Model Y 的续航里程是多少？",
+        "ground_truth": "特斯拉 Model Y 长续航版的续航里程约为 600 公里",
+        "intent": "EXACT"
+    },
+    {
+        "question": "什么是注意力机制？",
+        "ground_truth": "注意力机制让模型能够动态聚焦输入中的重要部分，是 Transformer 的核心组件",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "如何优化 RAG 系统的检索效率？",
+        "ground_truth": "可以通过向量索引优化、缓存机制、动态批处理等方式提升检索效率",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "什么是 Agent 的规划能力？",
+        "ground_truth": "Agent 的规划能力是指将复杂任务分解为可执行的子步骤，并协调执行的能力",
+        "intent": "SEMANTIC"
+    },
+    {
+        "question": "BF16 混合精度的优点是什么？",
+        "ground_truth": "BF16 混合精度在保持训练稳定性的同时，显著减少显存占用和加速计算",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "梯度累积的作用是什么？",
+        "ground_truth": "梯度累积可以在有限显存下模拟更大的批次大小，提高训练稳定性",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "模型剪枝的原理是什么？",
+        "ground_truth": "模型剪枝通过移除不重要的权重或神经元，减少模型大小和计算量",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "为什么需要模型量化？",
+        "ground_truth": "模型量化可以减少模型大小、降低显存占用、加速推理速度",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "BERT 模型的预训练任务是什么？",
+        "ground_truth": "BERT 的预训练任务包括掩码语言模型和下一句预测",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "GPU 和 CPU 的主要区别是什么？",
+        "ground_truth": "GPU 适合并行计算，CPU 适合复杂逻辑和串行处理",
+        "intent": "FACTUAL"
+    },
+    {
+        "question": "Linux 中如何查看文件内容？",
+        "ground_truth": "可以使用 cat、less、head、tail 等命令查看文件内容",
+        "intent": "ENTITY"
+    },
+    {
+        "question": "Docker 的作用是什么？",
+        "ground_truth": "Docker 是容器化平台，用于打包应用及其依赖，实现环境一致性",
+        "intent": "ENTITY"
+    }
+]
